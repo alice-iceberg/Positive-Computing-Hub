@@ -6,6 +6,7 @@ import android.content.pm.PackageManager;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
+import android.text.method.LinkMovementMethod;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -30,6 +31,9 @@ public class DetailsActivity extends AppCompatActivity implements adapterphone.L
     TextView appTitleTextView;
     TextView appSubtitleTextView;
     TextView descriptionTextView;
+    TextView goldenTimeLossTextView;
+    TextView goldenTimeControlTextView;
+    TextView goldenTimeAdditionalTextView;
 
     Button button;
 
@@ -52,6 +56,9 @@ public class DetailsActivity extends AppCompatActivity implements adapterphone.L
         appTitleTextView = findViewById(R.id.detailsAppTitleTextView);
         appSubtitleTextView = findViewById(R.id.detailsSubtitleTextView);
         descriptionTextView = findViewById(R.id.detailsDescriptionTextView);
+        goldenTimeLossTextView = findViewById(R.id.goldenTimeAdditionalTextLoss);
+        goldenTimeControlTextView = findViewById(R.id.goldenTimeAdditionalTextControl);
+        goldenTimeAdditionalTextView = findViewById(R.id.goldenTimeAdditionalText);
 
         button = findViewById(R.id.detailsButton);
 
@@ -81,6 +88,11 @@ public class DetailsActivity extends AppCompatActivity implements adapterphone.L
                 subtitle = getString(R.string.goldentime_subtitle);
                 description = getString(R.string.goldentime_description);
                 link = getString(R.string.goldentime_link);
+                goldenTimeControlTextView.setMovementMethod(LinkMovementMethod.getInstance());
+                goldenTimeLossTextView.setMovementMethod(LinkMovementMethod.getInstance());
+                goldenTimeControlTextView.setVisibility(View.VISIBLE);
+                goldenTimeLossTextView.setVisibility(View.VISIBLE);
+                goldenTimeAdditionalTextView.setVisibility(View.VISIBLE);
                 break;
             case "BeActive":
                 packageName = getString(R.string.beactive_package_name);

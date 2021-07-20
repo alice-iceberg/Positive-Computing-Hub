@@ -23,6 +23,9 @@
     <string name="goldentime_subtitle">System-driven timeboxing</string>
     <string name="goldentime_description">GoldenTime is an app that promotes self-regulated usage behavior via system-driven proactive timeboxing and micro-financial incentives framed as gain or loss for behavioral reinforcement. System-driven timeboxing calculates the user\'s accumulated usage time per hour. If the usage time is less than 10mins, the app provides users with incentives (i.e., micro-incentive) as a reward for phone regulation.</string>
     <string name="goldentime_link">https://drive.google.com/drive/u/0/folders/1T0U_dsLj8UCUIZP8e7jaqvg61V6aj7-Y</string>
+    <string name="goldentime_additional_loss"><a href="https://drive.google.com/drive/u/0/folders/1d0WdY0IWRTJTXRJDXV8cnCUzoDP_ajSa">GoldenTime (Loss)</a></string>
+    <string name="goldentime_additional_control"><a href="https://drive.google.com/drive/u/0/folders/1EBYXQtn2BiTsm7WgdvXOVMg8MXoYhQvK">GoldenTime (Control)</a></string>
+
 
     <string name="beactive_package_name">kr.co.becod.beactive</string>
     <string name="beactive_title">BeActive</string>
