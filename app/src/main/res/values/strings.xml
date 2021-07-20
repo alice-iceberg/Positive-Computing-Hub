@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Hub</string>
+    <string name="dummy">Dummy</string>
+    <string name="get">Get</string>
+    <string name="open">Open</string>
+    <string name="applications">Applications</string>
+    <string name="description">Description</string>
+
+    <string name="mindscope_package_name">kr.ac.inha.mindscope</string>
+    <string name="mindscope_title">MindScope</string>
+    <string name="mindscope_subtitle">Stress prediction</string>
+    <string name="mindscope_description">MindScope is an application that helps users to manage their daily stress level by predicting the user’s stress level, showing it with three conditions (e.g., stress level low, little high and high) according to the collected data, and providing analysis on a daily basis. The stress prediction accuracy is further improved with the feedback from the users.  </string>
+    <string name="mindscope_link">https://drive.google.com/drive/u/1/folders/1LZ6OzXoselDLAsZ2WDK9zFoq5I20YvNy</string>
+
+    <string name="focusaid_package_name">com.yeongil.focusaid</string>
+    <string name="focusaid_title">FocusAid</string>
+    <string name="focusaid_subtitle">Distraction management</string>
+    <string name="focusaid_description">This app allows users to generate distraction management rules. Users can specify context conditions through this app where they perceive smartphones as distracting and designate actions to handle distraction in that condition</string>
+    <string name="focusaid_link">https://docs.google.com/uc?export=download&amp;id=1UoPEo6StMlnzif21_6tkyztAiDz2UHDC</string>
+
+    <string name="goldentime_package_name">kr.ac.kaist.jypark.goldentime_v1</string>
+    <string name="goldentime_title">GoldenTime</string>
+    <string name="goldentime_subtitle">System-driven timeboxing</string>
+    <string name="goldentime_description">GoldenTime is an app that promotes self-regulated usage behavior via system-driven proactive timeboxing and micro-financial incentives framed as gain or loss for behavioral reinforcement. System-driven timeboxing calculates the user\'s accumulated usage time per hour. If the usage time is less than 10mins, the app provides users with incentives (i.e., micro-incentive) as a reward for phone regulation.</string>
+    <string name="goldentime_link">https://drive.google.com/drive/u/0/folders/1T0U_dsLj8UCUIZP8e7jaqvg61V6aj7-Y</string>
+
+    <string name="beactive_package_name">kr.co.becod.beactive</string>
+    <string name="beactive_title">BeActive</string>
+    <string name="beactive_subtitle">Health interventions</string>
+    <string name="beactive_description">BeActive is a mobile health intervention app that aims to improve users\' sedentary habits for long periods of time. The app provides users with JIT(Just-In-Time) alarm messages to promote a short break when their sedentary status lasts 50 minutes. If users follow the guide, the system gives them an incentive as a reward.</string>
+    <string name="beactive_link">https://drive.google.com/file/d/11Ge5MRLxvLZ1-1OhXfID_MhuYjPFXGMe/view?usp=sharing</string>
+
+    <string name="stresstrendmeter_package_name">packagename</string>
+    <string name="stresstrendmeter_title">Stress Trendmeter</string>
+    <string name="stresstrendmeter_subtitle">Stress monitoring</string>
+    <string name="stresstrendmeter_description">To be added</string>
+    <string name="stresstrendmeter_link">https://www.google.com/</string>
+
+    <string name="routineaid_package_name">com.ajouhcil.routinaid</string>
+    <string name="routineaid_title">RoutinAid</string>
+    <string name="routineaid_subtitle">Daily routines</string>
+    <string name="routineaid_description">RoutinAid is a gamified smartphone app for managing daily routines of adolescents with Autism Spectrum Disorder (ASD). Users can experience more diverse visual rewards (e.g., village development, character acquisition) as they achieve more routines.</string>
+    <string name="routineaid_link">https://drive.google.com/file/d/1Ixy0MnqzDDNQMt0t5ZLYN6SEC0T2-lH_/view?usp=sharing</string>
+
+</resources>
