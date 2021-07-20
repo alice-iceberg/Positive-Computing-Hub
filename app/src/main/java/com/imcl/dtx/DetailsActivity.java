@@ -76,6 +76,7 @@ public class DetailsActivity extends AppCompatActivity implements adapterphone.L
                 break;
             case "FocusAid":
                 packageName = getString(R.string.focusaid_package_name);
+                appIconImageView.setImageResource(R.drawable.focus_aid_icon);
                 title = getString(R.string.focusaid_title);
                 subtitle = getString(R.string.focusaid_subtitle);
                 description = getString(R.string.focusaid_description);
@@ -102,12 +103,13 @@ public class DetailsActivity extends AppCompatActivity implements adapterphone.L
                 description = getString(R.string.beactive_description);
                 link = getString(R.string.beactive_link);
                 break;
-            case "Stress Trendmeter":
-                packageName = getString(R.string.stresstrendmeter_package_name);
-                title = getString(R.string.stresstrendmeter_title);
-                subtitle = getString(R.string.stresstrendmeter_subtitle);
-                description = getString(R.string.stresstrendmeter_description);
-                link = getString(R.string.stresstrendmeter_link);
+            case "MyButler":
+                packageName = getString(R.string.mybutler_package_name);
+                appIconImageView.setImageResource(R.drawable.mybutler_logo);
+                title = getString(R.string.mybutler_title);
+                subtitle = getString(R.string.mybutler_subtitle);
+                description = getString(R.string.mybutler_description);
+                link = getString(R.string.mybutler_link);
                 break;
             case "RoutinAid":
                 packageName = getString(R.string.routineaid_package_name);
@@ -171,10 +173,8 @@ public class DetailsActivity extends AppCompatActivity implements adapterphone.L
                 phonelocations.add(new phonehelper(R.drawable.beactive_screen2));
                 phonelocations.add(new phonehelper(R.drawable.beactive_screen3));
                 break;
-            case "Stress Trendmeter":
-                phonelocations.add(new phonehelper(R.drawable.stress));
-                phonelocations.add(new phonehelper(R.drawable.stress));
-                phonelocations.add(new phonehelper(R.drawable.stress));
+            case "MyButler":
+                phonelocations.add(new phonehelper(R.drawable.mybutler_screen1));
                 break;
             case "RoutinAid":
                 phonelocations.add(new phonehelper(R.drawable.routin_screen1));

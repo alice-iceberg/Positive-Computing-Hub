@@ -33,11 +33,11 @@
     <string name="beactive_description">BeActive is a mobile health intervention app that aims to improve users\' sedentary habits for long periods of time. The app provides users with JIT(Just-In-Time) alarm messages to promote a short break when their sedentary status lasts 50 minutes. If users follow the guide, the system gives them an incentive as a reward.</string>
     <string name="beactive_link">https://drive.google.com/file/d/11Ge5MRLxvLZ1-1OhXfID_MhuYjPFXGMe/view?usp=sharing</string>
 
-    <string name="stresstrendmeter_package_name">packagename</string>
-    <string name="stresstrendmeter_title">Stress Trendmeter</string>
-    <string name="stresstrendmeter_subtitle">Stress monitoring</string>
-    <string name="stresstrendmeter_description">To be added</string>
-    <string name="stresstrendmeter_link">https://www.google.com/</string>
+    <string name="mybutler_package_name">org.nmsl.projects.mybutler1</string>
+    <string name="mybutler_title">MyButler</string>
+    <string name="mybutler_subtitle">Notifications management</string>
+    <string name="mybutler_description">MyButler is an app for a pair of Android users that aims to lower the pressure for an immediate reply and reduce unnecessary interruptions by untimely notifications. It allows a pair of users to privately share their status with one another and for the message sender to control the message notification based on the shared status of the other.</string>
+    <string name="mybutler_link">https://drive.google.com/file/d/1gMxwbEd3ZRDPDZuoZQCrASMUyI26D_rV/view?usp=sharing</string>
 
     <string name="routineaid_package_name">com.ajouhcil.routinaid</string>
     <string name="routineaid_title">RoutinAid</string>

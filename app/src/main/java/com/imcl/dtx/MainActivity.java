@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     Button focusAidButton;
     Button goldenTimeButton;
     Button beActiveButton;
-    Button stressTrendmeterButton;
+    Button myButlerButton;
     Button routinAidButton;
 
     SharedPreferences configPrefs;
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         focusAidButton = findViewById(R.id.getOpenMainFocusAidBtn);
         goldenTimeButton = findViewById(R.id.getOpenMainGoldenTimeBtn);
         beActiveButton = findViewById(R.id.getOpenMainBeActiveBtn);
-        stressTrendmeterButton = findViewById(R.id.getOpenMainStressTrendmeterBtn);
+        myButlerButton = findViewById(R.id.getOpenMainMyButlerBtn);
         routinAidButton = findViewById(R.id.getOpenMainRoutinAidBtn);
 
         if (Utils.isPackageInstalled(getString(R.string.mindscope_package_name), getApplicationContext().getPackageManager())) {
@@ -54,17 +54,16 @@ public class MainActivity extends AppCompatActivity {
         } else {
             beActiveButton.setText(getString(R.string.get));
         }
-        if (Utils.isPackageInstalled(getString(R.string.stresstrendmeter_package_name), getApplicationContext().getPackageManager())) {
-            stressTrendmeterButton.setText(getString(R.string.open));
+        if (Utils.isPackageInstalled(getString(R.string.mybutler_package_name), getApplicationContext().getPackageManager())) {
+            myButlerButton.setText(getString(R.string.open));
         } else {
-            stressTrendmeterButton.setText(getString(R.string.get));
+            myButlerButton.setText(getString(R.string.get));
         }
         if (Utils.isPackageInstalled(getString(R.string.routineaid_package_name), getApplicationContext().getPackageManager())) {
             routinAidButton.setText(getString(R.string.open));
         } else {
             routinAidButton.setText(getString(R.string.get));
         }
-
 
 
     }
@@ -83,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+
     public void onViewMindscopeClick(View view) {
         SharedPreferences.Editor editor = configPrefs.edit();
         editor.putString("app", getString(R.string.mindscope_title));
@@ -106,6 +106,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+
     public void onViewFocusAidClick(View view) {
         SharedPreferences.Editor editor = configPrefs.edit();
         editor.putString("app", getString(R.string.focusaid_title));
@@ -129,6 +130,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+
     public void onViewGoldenTimeClick(View view) {
         SharedPreferences.Editor editor = configPrefs.edit();
         editor.putString("app", getString(R.string.goldentime_title));
@@ -152,6 +154,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+
     public void onViewBeActiveClick(View view) {
         SharedPreferences.Editor editor = configPrefs.edit();
         editor.putString("app", getString(R.string.beactive_title));
@@ -161,13 +164,13 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void onGetOpenStressTrendmeterClick(View view) {
-        String link = getString(R.string.stresstrendmeter_link);
+    public void onGetOpenMyButlerClick(View view) {
+        String link = getString(R.string.mybutler_link);
         Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(link));
-        if (stressTrendmeterButton.getText().equals(getString(R.string.get))) {
+        if (myButlerButton.getText().equals(getString(R.string.get))) {
             startActivity(browserIntent);
         } else {
-            Intent launchIntent = getPackageManager().getLaunchIntentForPackage(getString(R.string.stresstrendmeter_package_name));
+            Intent launchIntent = getPackageManager().getLaunchIntentForPackage(getString(R.string.mybutler_package_name));
             if (launchIntent != null) {
                 startActivity(launchIntent);
             } else {
@@ -175,9 +178,10 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
-    public void onViewStressTrendmeterClick(View view) {
+
+    public void onViewMyButlerClick(View view) {
         SharedPreferences.Editor editor = configPrefs.edit();
-        editor.putString("app", getString(R.string.stresstrendmeter_title));
+        editor.putString("app", getString(R.string.mybutler_title));
         editor.apply();
         Intent intent = new Intent(getApplicationContext(), DetailsActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -198,6 +202,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+
     public void onViewRoutinAidClick(View view) {
         SharedPreferences.Editor editor = configPrefs.edit();
         editor.putString("app", getString(R.string.routineaid_title));
@@ -230,10 +235,10 @@ public class MainActivity extends AppCompatActivity {
         } else {
             beActiveButton.setText(getString(R.string.get));
         }
-        if (Utils.isPackageInstalled(getString(R.string.stresstrendmeter_package_name), getApplicationContext().getPackageManager())) {
-            stressTrendmeterButton.setText(getString(R.string.open));
+        if (Utils.isPackageInstalled(getString(R.string.mybutler_package_name), getApplicationContext().getPackageManager())) {
+            myButlerButton.setText(getString(R.string.open));
         } else {
-            stressTrendmeterButton.setText(getString(R.string.get));
+            myButlerButton.setText(getString(R.string.get));
         }
         if (Utils.isPackageInstalled(getString(R.string.routineaid_package_name), getApplicationContext().getPackageManager())) {
             routinAidButton.setText(getString(R.string.open));
